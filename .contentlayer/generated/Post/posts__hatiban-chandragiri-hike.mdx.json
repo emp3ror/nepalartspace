@@ -1,0 +1,59 @@
+{
+  "title": "Hittiban - champadevi - bhasmasur - chandragiri",
+  "description": "hike",
+  "date": "2024-03-18T00:00:00.000Z",
+  "category": "hike",
+  "tags": [
+    "sketchbook",
+    "process"
+  ],
+  "cover": "/images/art-placeholder.jpg",
+  "template": "hike",
+  "gpx": "/gpx/Afternoon_Run.gpx",
+  "checkpoints": [
+    {
+      "lat": 27.713511,
+      "lon": 85.291634,
+      "name": "G1",
+      "desc": "The place where I first started hiking.",
+      "icon": "🥾"
+    },
+    {
+      "lat": 27.718898,
+      "lon": 85.273611,
+      "name": "Small summit",
+      "desc": "Champadevi",
+      "icon": "🥪"
+    },
+    {
+      "lat": 27.729007,
+      "lon": 85.254636,
+      "name": "Big Summit",
+      "desc": "Bhasmasur",
+      "icon": "🥪"
+    },
+    {
+      "lat": 27.717425,
+      "lon": 85.270711,
+      "name": "Before End",
+      "desc": "The place where I first started hiking.",
+      "icon": "🎉"
+    }
+  ],
+  "body": {
+    "raw": "\n## Palette\n\n- Walnut ink\n- Indigo powder\n- Rice paper rescued from the recycling stack\n\nThe page buckles when it dries and that is half the charm. I layer washes, lift pigment with salt, then leave the mistakes visible so the piece keeps breathing.\n\n> Each bloom is a timestamp of the brush pausing for breath.\n",
+    "code": "var Component=(()=>{var oe=Object.create;var p=Object.defineProperty;var ie=Object.getOwnPropertyDescriptor;var se=Object.getOwnPropertyNames;var ce=Object.getPrototypeOf,le=Object.prototype.hasOwnProperty;var E=(n,r)=>()=>(r||n((r={exports:{}}).exports,r),r.exports),ue=(n,r)=>{for(var c in r)p(n,c,{get:r[c],enumerable:!0})},P=(n,r,c,b)=>{if(r&&typeof r==\"object\"||typeof r==\"function\")for(let l of se(r))!le.call(n,l)&&l!==c&&p(n,l,{get:()=>r[l],enumerable:!(b=ie(r,l))||b.enumerable});return n};var me=(n,r,c)=>(c=n!=null?oe(ce(n)):{},P(r||!n||!n.__esModule?p(c,\"default\",{value:n,enumerable:!0}):c,n)),de=n=>P(p({},\"__esModule\",{value:!0}),n);var U=E((je,C)=>{C.exports=React});var I=E(N=>{\"use strict\";(function(){function n(e){if(e==null)return null;if(typeof e==\"function\")return e.$$typeof===ee?null:e.displayName||e.name||null;if(typeof e==\"string\")return e;switch(e){case _:return\"Fragment\";case X:return\"Profiler\";case z:return\"StrictMode\";case H:return\"Suspense\";case Z:return\"SuspenseList\";case J:return\"Activity\"}if(typeof e==\"object\")switch(typeof e.tag==\"number\"&&console.error(\"Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue.\"),e.$$typeof){case q:return\"Portal\";case B:return(e.displayName||\"Context\")+\".Provider\";case G:return(e._context.displayName||\"Context\")+\".Consumer\";case K:var t=e.render;return e=e.displayName,e||(e=t.displayName||t.name||\"\",e=e!==\"\"?\"ForwardRef(\"+e+\")\":\"ForwardRef\"),e;case Q:return t=e.displayName||null,t!==null?t:n(e.type)||\"Memo\";case R:t=e._payload,e=e._init;try{return n(e(t))}catch{}}return null}function r(e){return\"\"+e}function c(e){try{r(e);var t=!1}catch{t=!0}if(t){t=console;var a=t.error,s=typeof Symbol==\"function\"&&Symbol.toStringTag&&e[Symbol.toStringTag]||e.constructor.name||\"Object\";return a.call(t,\"The provided key is an unsupported type %s. This value must be coerced to a string before using it here.\",s),r(e)}}function b(e){if(e===_)return\"<>\";if(typeof e==\"object\"&&e!==null&&e.$$typeof===R)return\"<...>\";try{var t=n(e);return t?\"<\"+t+\">\":\"<...>\"}catch{return\"<...>\"}}function l(){var e=v.A;return e===null?null:e.getOwner()}function T(){return Error(\"react-stack-top-frame\")}function M(e){if(y.call(e,\"key\")){var t=Object.getOwnPropertyDescriptor(e,\"key\").get;if(t&&t.isReactWarning)return!1}return e.key!==void 0}function W(e,t){function a(){w||(w=!0,console.error(\"%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)\",t))}a.isReactWarning=!0,Object.defineProperty(e,\"key\",{get:a,configurable:!0})}function L(){var e=n(this.type);return S[e]||(S[e]=!0,console.error(\"Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release.\")),e=this.props.ref,e!==void 0?e:null}function $(e,t,a,s,u,m,d,j){return a=m.ref,e={$$typeof:x,type:e,key:t,props:m,_owner:u},(a!==void 0?a:null)!==null?Object.defineProperty(e,\"ref\",{enumerable:!1,get:L}):Object.defineProperty(e,\"ref\",{enumerable:!1,value:null}),e._store={},Object.defineProperty(e._store,\"validated\",{configurable:!1,enumerable:!1,writable:!0,value:0}),Object.defineProperty(e,\"_debugInfo\",{configurable:!1,enumerable:!1,writable:!0,value:null}),Object.defineProperty(e,\"_debugStack\",{configurable:!1,enumerable:!1,writable:!0,value:d}),Object.defineProperty(e,\"_debugTask\",{configurable:!1,enumerable:!1,writable:!0,value:j}),Object.freeze&&(Object.freeze(e.props),Object.freeze(e)),e}function V(e,t,a,s,u,m,d,j){var o=t.children;if(o!==void 0)if(s)if(te(o)){for(s=0;s<o.length;s++)k(o[s]);Object.freeze&&Object.freeze(o)}else console.error(\"React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.\");else k(o);if(y.call(t,\"key\")){o=n(e);var f=Object.keys(t).filter(function(ae){return ae!==\"key\"});s=0<f.length?\"{key: someKey, \"+f.join(\": ..., \")+\": ...}\":\"{key: someKey}\",A[o+s]||(f=0<f.length?\"{\"+f.join(\": ..., \")+\": ...}\":\"{}\",console.error(`A props object containing a \"key\" prop is being spread into JSX:\n  let props = %s;\n  <%s {...props} />\nReact keys must be passed directly to JSX without using spread:\n  let props = %s;\n  <%s key={someKey} {...props} />`,s,o,f,o),A[o+s]=!0)}if(o=null,a!==void 0&&(c(a),o=\"\"+a),M(t)&&(c(t.key),o=\"\"+t.key),\"key\"in t){a={};for(var g in t)g!==\"key\"&&(a[g]=t[g])}else a=t;return o&&W(a,typeof e==\"function\"?e.displayName||e.name||\"Unknown\":e),$(e,o,m,u,l(),a,d,j)}function k(e){typeof e==\"object\"&&e!==null&&e.$$typeof===x&&e._store&&(e._store.validated=1)}var h=U(),x=Symbol.for(\"react.transitional.element\"),q=Symbol.for(\"react.portal\"),_=Symbol.for(\"react.fragment\"),z=Symbol.for(\"react.strict_mode\"),X=Symbol.for(\"react.profiler\");Symbol.for(\"react.provider\");var G=Symbol.for(\"react.consumer\"),B=Symbol.for(\"react.context\"),K=Symbol.for(\"react.forward_ref\"),H=Symbol.for(\"react.suspense\"),Z=Symbol.for(\"react.suspense_list\"),Q=Symbol.for(\"react.memo\"),R=Symbol.for(\"react.lazy\"),J=Symbol.for(\"react.activity\"),ee=Symbol.for(\"react.client.reference\"),v=h.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE,y=Object.prototype.hasOwnProperty,te=Array.isArray,O=console.createTask?console.createTask:function(){return null};h={\"react-stack-bottom-frame\":function(e){return e()}};var w,S={},re=h[\"react-stack-bottom-frame\"].bind(h,T)(),ne=O(b(T)),A={};N.Fragment=_,N.jsxDEV=function(e,t,a,s,u,m){var d=1e4>v.recentlyCreatedOwnerStacks++;return V(e,t,a,s,u,m,d?Error(\"react-stack-top-frame\"):re,d?O(b(e)):ne)}})()});var Y=E((Ee,D)=>{\"use strict\";D.exports=I()});var pe={};ue(pe,{default:()=>he,frontmatter:()=>fe});var i=me(Y()),fe={title:\"Hittiban - champadevi - bhasmasur - chandragiri\",description:\"hike\",date:\"2024-03-18\",category:\"hike\",tags:[\"sketchbook\",\"process\"],cover:\"/images/art-placeholder.jpg\",template:\"hike\",gpx:\"/gpx/Afternoon_Run.gpx\",checkpoints:[{lat:27.713511,lon:85.291634,name:\"G1\",desc:\"The place where I first started hiking.\",icon:\"\\u{1F97E}\"},{lat:27.718898,lon:85.273611,name:\"Small summit\",desc:\"Champadevi\",icon:\"\\u{1F96A}\"},{lat:27.729007,lon:85.254636,name:\"Big Summit\",desc:\"Bhasmasur\",icon:\"\\u{1F96A}\"},{lat:27.717425,lon:85.270711,name:\"Before End\",desc:\"The place where I first started hiking.\",icon:\"\\u{1F389}\"}]};function F(n){let r=Object.assign({h2:\"h2\",a:\"a\",ul:\"ul\",li:\"li\",p:\"p\",blockquote:\"blockquote\"},n.components);return(0,i.jsxDEV)(i.Fragment,{children:[(0,i.jsxDEV)(r.h2,{id:\"palette\",children:(0,i.jsxDEV)(r.a,{href:\"#palette\",children:\"Palette\"},void 0,!1,{fileName:\"/Users/manishjungthapa/public_html/mjt/mjt/content/posts/_mdx_bundler_entry_point-dc0cfbe3-1ee0-4439-8a22-95d373817216.mdx\"},this)},void 0,!1,{fileName:\"/Users/manishjungthapa/public_html/mjt/mjt/content/posts/_mdx_bundler_entry_point-dc0cfbe3-1ee0-4439-8a22-95d373817216.mdx\",lineNumber:35,columnNumber:1},this),`\n`,(0,i.jsxDEV)(r.ul,{children:[`\n`,(0,i.jsxDEV)(r.li,{children:\"Walnut ink\"},void 0,!1,{fileName:\"/Users/manishjungthapa/public_html/mjt/mjt/content/posts/_mdx_bundler_entry_point-dc0cfbe3-1ee0-4439-8a22-95d373817216.mdx\",lineNumber:37,columnNumber:1},this),`\n`,(0,i.jsxDEV)(r.li,{children:\"Indigo powder\"},void 0,!1,{fileName:\"/Users/manishjungthapa/public_html/mjt/mjt/content/posts/_mdx_bundler_entry_point-dc0cfbe3-1ee0-4439-8a22-95d373817216.mdx\",lineNumber:38,columnNumber:1},this),`\n`,(0,i.jsxDEV)(r.li,{children:\"Rice paper rescued from the recycling stack\"},void 0,!1,{fileName:\"/Users/manishjungthapa/public_html/mjt/mjt/content/posts/_mdx_bundler_entry_point-dc0cfbe3-1ee0-4439-8a22-95d373817216.mdx\",lineNumber:39,columnNumber:1},this),`\n`]},void 0,!0,{fileName:\"/Users/manishjungthapa/public_html/mjt/mjt/content/posts/_mdx_bundler_entry_point-dc0cfbe3-1ee0-4439-8a22-95d373817216.mdx\",lineNumber:37,columnNumber:1},this),`\n`,(0,i.jsxDEV)(r.p,{children:\"The page buckles when it dries and that is half the charm. I layer washes, lift pigment with salt, then leave the mistakes visible so the piece keeps breathing.\"},void 0,!1,{fileName:\"/Users/manishjungthapa/public_html/mjt/mjt/content/posts/_mdx_bundler_entry_point-dc0cfbe3-1ee0-4439-8a22-95d373817216.mdx\",lineNumber:41,columnNumber:1},this),`\n`,(0,i.jsxDEV)(r.blockquote,{children:[`\n`,(0,i.jsxDEV)(r.p,{children:\"Each bloom is a timestamp of the brush pausing for breath.\"},void 0,!1,{fileName:\"/Users/manishjungthapa/public_html/mjt/mjt/content/posts/_mdx_bundler_entry_point-dc0cfbe3-1ee0-4439-8a22-95d373817216.mdx\",lineNumber:43,columnNumber:3},this),`\n`]},void 0,!0,{fileName:\"/Users/manishjungthapa/public_html/mjt/mjt/content/posts/_mdx_bundler_entry_point-dc0cfbe3-1ee0-4439-8a22-95d373817216.mdx\",lineNumber:43,columnNumber:1},this)]},void 0,!0,{fileName:\"/Users/manishjungthapa/public_html/mjt/mjt/content/posts/_mdx_bundler_entry_point-dc0cfbe3-1ee0-4439-8a22-95d373817216.mdx\",lineNumber:1,columnNumber:1},this)}function be(n={}){let{wrapper:r}=n.components||{};return r?(0,i.jsxDEV)(r,Object.assign({},n,{children:(0,i.jsxDEV)(F,n,void 0,!1,{fileName:\"/Users/manishjungthapa/public_html/mjt/mjt/content/posts/_mdx_bundler_entry_point-dc0cfbe3-1ee0-4439-8a22-95d373817216.mdx\"},this)}),void 0,!1,{fileName:\"/Users/manishjungthapa/public_html/mjt/mjt/content/posts/_mdx_bundler_entry_point-dc0cfbe3-1ee0-4439-8a22-95d373817216.mdx\"},this):F(n)}var he=be;return de(pe);})();\n/*! Bundled license information:\n\nreact/cjs/react-jsx-dev-runtime.development.js:\n  (**\n   * @license React\n   * react-jsx-dev-runtime.development.js\n   *\n   * Copyright (c) Meta Platforms, Inc. and affiliates.\n   *\n   * This source code is licensed under the MIT license found in the\n   * LICENSE file in the root directory of this source tree.\n   *)\n*/\n;return Component;"
+  },
+  "_id": "posts/hatiban-chandragiri-hike.mdx",
+  "_raw": {
+    "sourceFilePath": "posts/hatiban-chandragiri-hike.mdx",
+    "sourceFileName": "hatiban-chandragiri-hike.mdx",
+    "sourceFileDir": "posts",
+    "contentType": "mdx",
+    "flattenedPath": "posts/hatiban-chandragiri-hike"
+  },
+  "type": "Post",
+  "slug": "hatiban-chandragiri-hike",
+  "url": "/posts/hatiban-chandragiri-hike",
+  "readingTime": "1 min read"
+}

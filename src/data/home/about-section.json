@@ -19,6 +19,6 @@
   },
   "softwareSection": {
     "title": "Tools",
-    "badges": ["Next.js", "TypeScript", "Contentlayer", "Tailwind (4)", "ESLint", "MDX"]
+    "badges": ["Next.js", "TypeScript", "Tailwind (4)", "ESLint", "MDX"]
   }
 }
