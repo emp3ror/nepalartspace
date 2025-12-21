@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BookmarkPlus, CalendarDays, MapPin } from "lucide-react";
 
-import { normalizeEventDates } from "@/lib/events";
+import { formatEventDateRange } from "@/lib/events";
 import type { MdxEvent } from "@/lib/mdx-events";
 
 type DisplayEvent = Pick<
@@ -62,17 +62,13 @@ type EventsPreviewSectionProps = {
   events: DisplayEvent[];
 };
 
-const formatDateRange = (event: DisplayEvent) => {
-  const { startLabel, endLabel } = normalizeEventDates({
+const formatDateRange = (event: DisplayEvent) =>
+  formatEventDateRange({
     date: event.date,
     endDate: event.endDate,
     startTime: event.startTime,
     endTime: event.endTime,
   });
-
-  if (startLabel === endLabel) return startLabel;
-  return `${startLabel} – ${endLabel}`;
-};
 
 export function EventsPreviewSection({ events }: EventsPreviewSectionProps) {
   const source = events.length > 0 ? events : placeholderEvents;
