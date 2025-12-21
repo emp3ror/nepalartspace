@@ -1,0 +1,8 @@
+{
+  "links": [
+    { "id": "email", "label": "Email", "href": "mailto:hello@example.com", "icon": "Mail" },
+    { "id": "github", "label": "GitHub", "href": "https://github.com/example", "icon": "Palette" },
+    { "id": "linkedin", "label": "LinkedIn", "href": "https://www.linkedin.com/company/example", "icon": "Linkedin" },
+    { "id": "website", "label": "Website", "href": "https://example.com", "icon": "Instagram" }
+  ]
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Alex Example",
+    "role": "Product Lead",
+    "quote": "Keep this slot for a real testimonial later. It shows how quotes render with the current styling."
+  },
+  {
+    "name": "Jordan Sample",
+    "role": "Engineering Manager",
+    "quote": "Use it to highlight collaboration, outcomes, or anything else that matters to your audience."
+  },
+  {
+    "name": "Casey Placeholder",
+    "role": "Founder",
+    "quote": "Remove or duplicate these entries depending on how many voices you want to feature."
+  }
+]

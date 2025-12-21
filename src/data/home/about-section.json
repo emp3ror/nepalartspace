@@ -1,0 +1,24 @@
+{
+  "heading": {
+    "eyebrow": "About",
+    "title": "A barebones starter",
+    "description": "Use this space to introduce your project, team, or product."
+  },
+  "introParagraphs": [
+    "This starter keeps the content pipeline, routing, and theming in place so you can focus on writing and shipping.",
+    "Swap in your own tone, remove sections you do not need, and connect your preferred data sources when you are ready."
+  ],
+  "studioSnapshot": {
+    "title": "What is included",
+    "items": [
+      "Next.js app router wired to Contentlayer and MDX.",
+      "Prebuilt components you can reuse or replace.",
+      "TypeScript, ESLint, and basic styling tokens ready to extend.",
+      "Placeholder data only—bring your own stories and assets."
+    ]
+  },
+  "softwareSection": {
+    "title": "Tools",
+    "badges": ["Next.js", "TypeScript", "Contentlayer", "Tailwind (4)", "ESLint", "MDX"]
+  }
+}

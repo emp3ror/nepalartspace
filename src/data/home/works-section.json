@@ -1,0 +1,33 @@
+{
+  "heading": {
+    "eyebrow": "Portfolio",
+    "title": "Showcase your work",
+    "description": "Replace these sample projects with real launches, experiments, or case studies."
+  },
+  "projects": [
+    {
+      "title": "Sample Project One",
+      "category": "Web",
+      "description": "A placeholder case study. Swap the copy, tags, and link when you have real work to share.",
+      "cover": "https://picsum.photos/seed/starter-web/800/600",
+      "tags": ["Next.js", "Design", "Build"],
+      "link": "/posts"
+    },
+    {
+      "title": "Sample Project Two",
+      "category": "Brand",
+      "description": "Another slot you can reuse for packaging, illustration, or product storytelling.",
+      "cover": "https://picsum.photos/seed/starter-brand/800/600",
+      "tags": ["Brand", "Illustration", "Systems"],
+      "link": "/posts"
+    },
+    {
+      "title": "Sample Project Three",
+      "category": "Experiment",
+      "description": "Use this for labs, prototypes, or internal tools you want to highlight.",
+      "cover": "https://picsum.photos/seed/starter-experiment/800/600",
+      "tags": ["Prototype", "Lab"],
+      "link": "/posts"
+    }
+  ]
+}

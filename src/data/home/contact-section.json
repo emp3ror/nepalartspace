@@ -1,0 +1,17 @@
+{
+  "heading": {
+    "eyebrow": "Contact",
+    "title": "Plug in your form handler",
+    "description": "Connect this form to your preferred service or replace it with your own component."
+  },
+  "form": {
+    "fields": {
+      "name": { "label": "Name" },
+      "email": { "label": "Email" },
+      "message": { "label": "Message" }
+    },
+    "submit": { "label": "Send message", "icon": "Sparkles" },
+    "recaptchaNotConfigured": "reCAPTCHA keys are not set. Add them when you want spam protection.",
+    "responseTimeNotice": "Replace this line with your own response policy or remove it entirely."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "heading": {
+    "eyebrow": "Content",
+    "title": "Recent posts",
+    "description": "Posts appear here once you add MDX entries under content/posts."
+  },
+  "cta": {
+    "label": "View all posts",
+    "icon": ">"
+  }
+}

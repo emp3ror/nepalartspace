@@ -1,0 +1,11 @@
+{
+  "wordmarkTitle": "Upcoming Events",
+  "statement": [
+    "A simple, ready-to-brand starter for sharing events and updates.",
+    "Hook up your own content and publish without extra clutter."
+  ],
+  "ctas": [
+    { "label": "Find Events", "href": "#upcoming-events" },
+    { "label": "Subscribe", "href": "#subscribe" }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "heading": {
+    "eyebrow": "Skills",
+    "title": "Sample capability groups",
+    "description": "Tweak these numbers or remove the component entirely if you do not need progress bars."
+  },
+  "groups": [
+    {
+      "title": "Design systems",
+      "blurb": "Foundations, components, and documentation ready for teams.",
+      "accent": "accent",
+      "skills": [
+        { "label": "Foundations", "level": 90 },
+        { "label": "Components", "level": 88 },
+        { "label": "Docs", "level": 85 }
+      ]
+    },
+    {
+      "title": "Engineering",
+      "blurb": "Front-end tooling with TypeScript, MDX, and API routes.",
+      "accent": "leaf",
+      "skills": [
+        { "label": "TypeScript", "level": 92 },
+        { "label": "Contentlayer", "level": 86 },
+        { "label": "UX polish", "level": 84 }
+      ]
+    }
+  ]
+}

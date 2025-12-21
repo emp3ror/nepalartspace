@@ -1,0 +1,38 @@
+{
+  "id": "social-highlights",
+  "headline": {
+    "titleTop": "Work in progress",
+    "titleBottom": "Socials",
+    "eyebrow": "Placeholder"
+  },
+  "cards": [
+    {
+      "id": "highlight-desk",
+      "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80",
+      "alt": "Desk with notebook and laptop"
+    },
+    {
+      "id": "highlight-notes",
+      "image": "https://images.unsplash.com/photo-1503389152951-9f343605f61e?auto=format&fit=crop&w=900&q=80",
+      "alt": "Notebook with sketches"
+    },
+    {
+      "id": "highlight-color",
+      "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=900&q=80",
+      "alt": "Colorful sticky notes on a wall"
+    },
+    {
+      "id": "highlight-meet",
+      "image": "https://images.unsplash.com/photo-1552960562-daf630e9278b?auto=format&fit=crop&w=900&q=80",
+      "alt": "People collaborating around a table"
+    }
+  ],
+  "cta": {
+    "headline": "Link out to your own channels",
+    "platforms": [
+      { "id": "github", "label": "GitHub", "href": "https://github.com/example" },
+      { "id": "linkedin", "label": "LinkedIn", "href": "https://www.linkedin.com/company/example" },
+      { "id": "newsletter", "label": "Newsletter", "href": "#" }
+    ]
+  }
+}

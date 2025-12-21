@@ -1,0 +1,29 @@
+{
+  "heading": {
+    "eyebrow": "Experience",
+    "title": "Add your own timeline",
+    "description": "Use this block as a template for resume-style highlights or remove it if you do not need it."
+  },
+  "timeline": [
+    {
+      "title": "Sample Role",
+      "organization": "Your Company",
+      "timeframe": "2024 - Present",
+      "highlights": [
+        "Summarize a key impact or project here.",
+        "Mention collaboration or tooling that matters to you.",
+        "Keep bullets short so they are easy to scan."
+      ]
+    },
+    {
+      "title": "Previous Role",
+      "organization": "Another Team",
+      "timeframe": "2022 - 2024",
+      "highlights": [
+        "Swap these examples with your own milestones.",
+        "Use as many or as few items as you like.",
+        "Delete the entire section if it is not relevant."
+      ]
+    }
+  ]
+}
