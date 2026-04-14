@@ -1,9 +1,10 @@
 "use client";
 
 import { CalendarDays, CalendarPlus, Download } from "lucide-react";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 
 import { ContentActions } from "@/components/actions/content-actions";
+import { EventRsvpModalTrigger } from "@/components/events/event-rsvp-modal-trigger";
 import { buildGoogleCalendarLink, buildIcsDataUri, buildMicrosoftCalendarLink } from "@/lib/calendar";
 
 type EventActionsProps = {
@@ -17,6 +18,8 @@ type EventActionsProps = {
     endTime?: string;
     location?: string;
     url: string;
+    rsvp?: boolean;
+    rsvpUrl?: string;
   };
 };
 
@@ -24,21 +27,7 @@ const BOOKMARK_KEY = "starter-bookmarked-events";
 const LIKE_KEY = "starter-liked-events";
 
 export function EventActions({ event }: EventActionsProps) {
-  const [origin, setOrigin] = useState<string | null>(null);
-
-  useEffect(() => {
-    if (typeof window === "undefined") {
-      return;
-    }
-    setOrigin(window.location.origin);
-  }, []);
-
-  const eventUrl = useMemo(() => {
-    if (!origin) {
-      return event.url;
-    }
-    return `${origin}${event.url}`;
-  }, [event.url, origin]);
+  const eventUrl = event.url;
 
   const calendarData = useMemo(
     () => ({
@@ -66,6 +55,24 @@ export function EventActions({ event }: EventActionsProps) {
       url={eventUrl}
       likeStorageKey={LIKE_KEY}
       bookmark={{ storageKey: BOOKMARK_KEY, slug: event.slug }}
+      header={
+        event.rsvp ? (
+          <div className="mb-1">
+            {event.rsvpUrl ? (
+              <a
+                href={event.rsvpUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center rounded-full bg-[#fcd68a] px-5 py-2 text-sm font-semibold text-[#1a1a1a] transition hover:-translate-y-0.5"
+              >
+                RSVP
+              </a>
+            ) : (
+              <EventRsvpModalTrigger eventSlug={event.slug} eventTitle={event.title} />
+            )}
+          </div>
+        ) : undefined
+      }
       calendar={{
         options: [
           {

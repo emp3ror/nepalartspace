@@ -18,6 +18,8 @@ export type MdxEvent = {
   cover?: string;
   registrationUrl?: string;
   category?: string;
+  rsvp?: boolean;
+  rsvpUrl?: string;
   body: string;
 };
 
@@ -38,6 +40,34 @@ const normalizeDateValue = (value: unknown): string | undefined => {
   return String(value).trim();
 };
 
+const normalizeBoolean = (value: unknown): boolean | undefined => {
+  if (typeof value === "boolean") return value;
+  if (typeof value === "string") {
+    const normalized = value.trim().toLowerCase();
+    if (normalized === "true") return true;
+    if (normalized === "false") return false;
+  }
+  return undefined;
+};
+
+const normalizeRsvp = (value: unknown): { enabled?: boolean; url?: string } => {
+  if (typeof value === "string") {
+    const normalized = value.trim();
+    const lower = normalized.toLowerCase();
+    if (lower === "true") return { enabled: true };
+    if (lower === "false") return { enabled: false };
+    if (normalized.startsWith("http://") || normalized.startsWith("https://")) {
+      return { enabled: true, url: normalized };
+    }
+  }
+
+  if (typeof value === "boolean") {
+    return { enabled: value };
+  }
+
+  return {};
+};
+
 const normalizeEvent = ({
   slug,
   data,
@@ -50,6 +80,8 @@ const normalizeEvent = ({
   if (!data.title || !data.date) {
     return null;
   }
+
+  const rsvp = normalizeRsvp(data.rsvp);
 
   return {
     _id: slug,
@@ -66,6 +98,8 @@ const normalizeEvent = ({
     cover: data.cover ? String(data.cover) : undefined,
     registrationUrl: data.registrationUrl ? String(data.registrationUrl) : undefined,
     category: data.category ? String(data.category) : undefined,
+    rsvp: rsvp.enabled ?? normalizeBoolean(data.rsvp),
+    rsvpUrl: rsvp.url,
     body: content,
   };
 };

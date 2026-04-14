@@ -3,6 +3,8 @@
 :root {
   --background: #fffcf8;
   --foreground: #1a1a1a;
+  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --font-sans: "Avenir Next", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --ink: #1a1a1a;
   --accent: #fcd68a;
   --highlight: #fcd68a;

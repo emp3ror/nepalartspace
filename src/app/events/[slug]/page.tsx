@@ -132,6 +132,8 @@ export default async function EventPage({ params }: EventPageProps) {
           endTime: event.endTime,
           location: event.location,
           url: event.url,
+          rsvp: event.rsvp,
+          rsvpUrl: event.rsvpUrl,
         }}
       />
 

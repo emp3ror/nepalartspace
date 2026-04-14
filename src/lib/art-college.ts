@@ -75,10 +75,7 @@ const pathExists = async (targetPath: string) => {
   try {
     await fs.access(targetPath);
     return true;
-  } catch (
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    _error
-  ) {
+  } catch {
     return false;
   }
 };
@@ -251,10 +248,7 @@ export const getArtCollegeEntry = async (slugSegments: string[]) => {
         frontMatter,
         content,
       };
-    } catch (
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      _error
-    ) {
+    } catch {
       // Try the next candidate path.
     }
   }
