@@ -19,7 +19,7 @@ const formatTagLabel = (tag: string) =>
     .join(" ");
 
 type TagPageProps = {
-  params: { tag: string };
+  params: Promise<{ tag: string }>;
 };
 
 export const generateStaticParams = async () => {
@@ -32,7 +32,7 @@ export const generateStaticParams = async () => {
 export const dynamicParams = false;
 
 export async function generateMetadata({ params }: TagPageProps): Promise<Metadata> {
-  const { tag } = params;
+  const { tag } = await params;
   const posts = await getAllPosts();
   const matchingPosts = posts.filter((post) =>
     (post.tags ?? []).some((item) => item.toLowerCase() === tag.toLowerCase()),
@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: TagPageProps): Promise<Metada
 }
 
 export default async function TagPage({ params }: TagPageProps) {
-  const { tag } = params;
+  const { tag } = await params;
   const posts = await getAllPosts();
   const normalizedTag = tag.toLowerCase();
 

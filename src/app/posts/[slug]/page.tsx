@@ -14,7 +14,7 @@ import { ContentActions } from "@/components/actions/content-actions";
 import { getAllPosts } from "@/lib/mdx-posts";
 
 type PostPageProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 const renderMdx = cache(async (source: string) => {
@@ -43,7 +43,7 @@ export const dynamicParams = false;
 export async function generateMetadata({
   params,
 }: PostPageProps): Promise<Metadata> {
-  const { slug } = params;
+  const { slug } = await params;
   const post = (await getAllPosts()).find((item) => item.slug === slug);
 
   if (!post) {
@@ -71,7 +71,7 @@ const formatDate = (value: string) =>
   }).format(new Date(value));
 
 export default async function PostPage({ params }: PostPageProps) {
-  const { slug } = params;
+  const { slug } = await params;
   const post = (await getAllPosts()).find((item) => item.slug === slug);
 
   if (!post) {
